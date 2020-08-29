@@ -27,4 +27,5 @@ int main(){
 }
 
 
-
+// class as physical objects
+// here a physical object is created as a class 

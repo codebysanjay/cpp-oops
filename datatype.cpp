@@ -28,3 +28,6 @@ int main(){
     cout<<"\n dist2 = ";dist2.showdist();
     return 0;
 }
+
+// class as datatype
+// here a new datatype distance is created
