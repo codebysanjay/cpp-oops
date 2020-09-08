@@ -23,7 +23,7 @@ void Distance::adddist(Distance d2,Distance d3){
         inches-=12.0;
         feet++;
     }
-    feet=d2.feet+d3.feet;
+    feet+=d2.feet+d3.feet;
 }
 int main(){
     Distance dist1,dist3;
