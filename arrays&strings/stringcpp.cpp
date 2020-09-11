@@ -14,7 +14,7 @@ int main(){
 
     s1.swap(s2);
     cout<<s1<<" nor "<<s2<<endl;
-
+    
     return 0;
 
 }
