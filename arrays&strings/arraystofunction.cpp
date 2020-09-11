@@ -1,39 +1,35 @@
 #include<iostream>
 using namespace std;
-const int row=2;
-const int col=2;
-// double array3[row][col];
-// void adding(double array1[row][col],double array2[row][col]){
-//     int r,c;
-//     for (r=0;r<row;r++){
-//         for(c=0;c<col;c++){
-//             array3[r][c]=array1[r][c]+array2[r][c];
-//         }
-//     }
-//     for (r=0;r<row;r++){
-//         for(c=0;c<col;c++){
-//             cout<<array3[r][c];
-//         }
-//     }
-// }
-int mian(){
-    int r,c;
-    double array1[row][col];
-    double array2[row][col];
-    for (r=0;r<row;r++){
-        for(c=0;c<col;c++){
-            cout<<"\nEnter element of row"<<r+1
-                <<" of column "<<c+1<<"of matrix 1:";
-            cin>>array1[r][c];
+const int row =2, col=2;
+double m1[row][col], m2[row][col];
+void addition(double array1[row][col],double array2[row][col]){
+   double sum[row][col];
+   cout<<"Output\n";
+   for (int i = 0;i<row;i++ ) {
+      for (int j = 0;j<col;j++ ) {
+        sum[i][j]=m1[i][j]+m2[i][j];
+        cout<<sum[i][j]<<" ";
+        if (j==col-1){
+            cout<<endl;
         }
-    }
-    for (r=0;r<row;r++){
-        for(c=0;c<col;c++){
-            cout<<"\nEnter element of row"<<r+1
-                <<" of column "<<c+1<<"of matrix 2:";
-            cin>>array1[r][c];
-        }
-    }
-    // adding(array1,array2);
-    return 0;
+      }
+   }
+}
+int main(){
+   cout << "Enter the elements of first 1st matrix: ";
+   for (int i = 0;i<row;i++ ) {
+     for (int j = 0;j < col;j++ ) {
+       cin>>m1[i][j];
+     }
+   }
+   cout << "Enter the elements of second 2nd matrix: ";
+   for (int i = 0;i<row;i++ ) {
+     for (int j = 0;j<col;j++ ) {
+       cin>>m2[i][j];
+     }
+   }
+
+    addition(m1,m2);
+
+   return 0;
 }

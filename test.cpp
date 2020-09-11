@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int x=10;
-    float y=1.1;
-    float z=x+y;
-    cout<<z<<endl;
-
-    int p=10;
-    double q=1.6;
-    int r=(int)q+p;
-    cout<<r<<endl;
+int i=5,j;
+j=i++;
+cout<<"\n\n\n*******************\n\n\n";
+cout<<"\ni ="<<i;
+cout<<"\nj ="<<j;
+i=5;
+j=++i;
+cout<<"\n\n\n*******************\n\n\n";
+cout<<"\ni ="<<i;
+cout<<"\nj ="<<j;
+cout<<"\n\n\n*******************\n\n\n";
 }
