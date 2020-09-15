@@ -1,11 +1,10 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-   int var1 = 11;
-   int var2 = 45;
-   int var3 = 31;
-   cout<<"\nVar1 address :"<<&var1;
-   cout<<"\nVar2 address :"<<&var2;
-   cout<<"\nVar3 address :"<<&var3;
+int main()
+{
+   int intarray[5] = {31, 54, 77, 52, 93};
+   cout<<intarray<<endl;
+   for (int j = 0; j < 5; j++)
+      cout << *(intarray + j) << endl;
    return 0;
 }

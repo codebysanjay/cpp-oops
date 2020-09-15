@@ -13,7 +13,7 @@ int main()
     }
     cout<<"\nElements are :";
     for(int i=0;i<n;i++){
-        cout<<p[i]<<endl;
+        cout<<*(p+i)<<endl;
     }
 
     delete p;
