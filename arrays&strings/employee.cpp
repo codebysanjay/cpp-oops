@@ -55,6 +55,7 @@ int main(){
 
     cout<<"\nEnter data for manager 1:";
     m1.getdata();
+    
 
 
     cout<<"\nEnter data for manager 2:";

@@ -15,7 +15,9 @@ int main(){
     cout<<"\ncount is :"<<s2.getcount();
     cout<<"\ncount is :"<<s3.getcount();
     staticdata s4;
+    
     cout<<"\ncount is :"<<s4.getcount();
+    cout<<"\ncount is :"<<s3.getcount();
     return 0;
 }
 // $ ./a.exe

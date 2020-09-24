@@ -48,41 +48,70 @@
 //    return 0;
 // }
 
-#include <iostream>
+// #include <iostream>
  
-using namespace std;
+// using namespace std;
 
-class Box {
-   public:
-      // Constructor definition
-      Box(double l = 2.0, double b = 2.0, double h = 2.0) {
-         cout <<"Constructor called." << endl;
-         length = l;
-         breadth = b;
-         height = h;
-      }
-      double Volume() {
-         return length * breadth * height;
-      }
-      int compare(Box box) {
-         return this->Volume() > box.Volume();
-      }
+// class Box {
+//    public:
+//       // Constructor definition
+//       Box(double l = 2.0, double b = 2.0, double h = 2.0) {
+//          cout <<"Constructor called." << endl;
+//          length = l;
+//          breadth = b;
+//          height = h;
+//       }
+//       double Volume() {
+//          return length * breadth * height;
+//       }
+//       int compare(Box box) {
+//          return this->Volume() > box.Volume();
+//       }
       
-   private:
-      double length;     // Length of a box
-      double breadth;    // Breadth of a box
-      double height;     // Height of a box
-};
+//    private:
+//       double length;     // Length of a box
+//       double breadth;    // Breadth of a box
+//       double height;     // Height of a box
+// };
 
-int main(void) {
-   Box Box1(3.3, 5.2, 1.5);    // Declare box1
-   Box Box2(0.1, 6.0, 2.0);    // Declare box2
-cout<<Box2.compare(Box1)<<endl;
-   if(Box1.compare(Box2)) {
-      cout << "Box2 is smaller than Box1" <<endl;
-   } else {
-      cout << "Box2 is equal to or larger than Box1" <<endl;
-   }
+// int main(void) {
+//    Box Box1(3.3, 5.2, 1.5);    // Declare box1
+//    Box Box2(0.1, 6.0, 2.0);    // Declare box2
+// cout<<Box2.compare(Box1)<<endl;
+//    if(Box1.compare(Box2)) {
+//       cout << "Box2 is smaller than Box1" <<endl;
+//    } else {
+//       cout << "Box2 is equal to or larger than Box1" <<endl;
+//    }
    
+//    return 0;
+// }
+
+#include<iostream>
+using namespace std;
+class test{
+   int a;
+   public:
+      int back(int t);
+      void addval(int k){
+         a=k;
+         cout<<a;
+      }
+      void backer(){
+         cout<<a;
+      }
+};
+int test::back(int t){
+   a=t;
+   return a;
+}
+int main(){
+   test h,a;
+   a.addval(5);
+   int k = h.back(20);
+   cout<<k;
+   
+   test b(a);
+   b.backer();
    return 0;
 }
